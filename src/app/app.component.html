@@ -36,7 +36,7 @@
                     <h3 class="box-title bearing">Distance</h3>
                     <div class="form-group" style="padding: 10px;">
                       <div class="col-md-6">
-                        <input type="number" class="form-control" id="inputEmail3" placeholder="m" formControlName='meet'>
+                        <input type="number" class="form-control" id="inputEmail3" placeholder="m" formControlName='meet' step='0.0001'>
                       </div>
                       <div class="col-md-6">
                         <button type="submit" class="btn btn-info pull-right">Ok</button>
@@ -46,10 +46,7 @@
                 </div>
               </div>
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
-            </div>
-            <!-- /.box-footer -->
+          
           </form>
 
         </div>
@@ -120,7 +117,7 @@
                         <label style="text-align: left;" for="inputEmail3" class="col-sm-8 control-label">Centring Error Constant</label>
 
                         <div class="col-sm-4">
-                          <input type="number" class="form-control" id="inputEmail3" formControlName='centringErrorConstant'>
+                          <input type="number" class="form-control" id="inputEmail3" formControlName='centringErrorConstant'step='0.001'>
                         </div>
                       </div>
                     </div>
@@ -137,21 +134,21 @@
                         <label style="text-align: left;" for="inputEmail3" class="col-sm-4 control-label">SE</label>
 
                         <div class="col-sm-8">
-                          <input type="number" class="form-control" id="inputEmail3" placeholder="" formControlName='se'>
+                          <input type="number" class="form-control" id="inputEmail3" placeholder="" formControlName='se' step='0.0001'>
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputEmail3" class="col-sm-4 control-label" style="text-align: left;">SN</label>
 
                         <div class="col-sm-8">
-                          <input type="number" class="form-control" id="inputEmail3" placeholder="" formControlName='sn'>
+                          <input type="number" class="form-control" id="inputEmail3" placeholder="" formControlName='sn' step='0.0001'>
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputEmail3" class="col-sm-4 control-label" style="text-align: left;">SEN</label>
 
                         <div class="col-sm-8">
-                          <input type="number" class="form-control" id="inputEmail3" placeholder="" formControlName='sen'>
+                          <input type="number" class="form-control" id="inputEmail3" placeholder="" formControlName='sen' step='0.0001'>
                         </div>
                       </div>
                     </div>
@@ -172,13 +169,13 @@
       </div>
       <div>
         <div class="panel panel-default" style="padding: 10px;">
-          <h4 class="box-title bearing">Error of Start Point</h4>
+          <h4 class="box-title bearing">Error of End Point</h4>
           <div class="row">
             <div class="form-group">
               <label for="inputEmail3" class="col-sm-4 control-label" style="text-align: left;">Linear Misclosure</label>
 
               <div class="col-sm-8">
-                <input type="number" class="form-control" id="inputEmail3" placeholder="">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="" [value]="LinearMisclosure">
               </div>
             </div>
             <div style="margin: 10px;"> . </div>
